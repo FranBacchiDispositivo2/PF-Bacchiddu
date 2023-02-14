@@ -1,0 +1,14 @@
+@import './sections/headerIndex';
+@import './sections/headerAllSections';
+@import './sections/footer';
+@import './sections/mainIndex';
+@import './sections/mainOrigen';
+@import './sections/mainMusica';
+@import './sections/mainEstetica';
+@import './sections/mainContacto.scss';
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+  }

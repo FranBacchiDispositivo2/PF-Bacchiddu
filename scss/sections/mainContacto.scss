@@ -1,0 +1,188 @@
+.banner-heroForm {
+    background-image: url(../recursos/bannerseccion.jpg);
+    height: 50vh;
+    background-size: cover;
+    background-position-y: -45vh;
+  }
+  
+  .titulo__delFormulario {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding-top: 120px;
+    font-size: 40px;
+    -webkit-text-stroke: 1px black;
+  }
+  
+  .subtitulo__delFormulario {
+    color: rgb(255, 255, 255);
+    margin-top: 110px;
+    margin-left: 70px;
+    font-size: 20px;
+    
+  }
+  
+  .formulario-conteiner {
+    background-image: url(../recursos/fondoimg.jpg);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  
+  .seccion__contacto {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+  
+  .contact__info {
+    color: #fff;
+    max-width: 500px;
+    line-height: 65px;
+    padding-left: 50px;
+    margin-right: 30px;
+    font-size: 18px;
+  }
+  
+  .contact__info i {
+    margin-right: 20px;
+    font-size: 25px;
+  }
+  
+  .contact__form{
+  max-width: 700px;
+  margin-right: 50px;
+  }
+  
+  .contact__info .contact__form {
+    flex: 1;
+  }
+  
+  .contact__form h2 {
+    color: #fff;
+    text-align: center;
+    font-size: 35px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+  }
+  
+  .contact__form .text-box {
+    background: #000;
+    color: #fff;
+    border: none;
+    width: calc(50% - 10px);
+    height: 50px;
+    padding: 12px;
+    font-size: 15px;
+    border-radius: 5px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    opacity: 0.9;
+  }
+  
+  .contact__form .text-box:first-child {
+    margin-right: 15px;
+  }
+  
+  .contact__form textarea{
+    background: #000;
+    color: #fff;
+    border: none;
+    width: 100%;
+    padding: 12px;
+    font-size: 15px;
+    min-height: 200px;
+    max-height: 400px;
+    resize: vertical;
+    border-radius: 5px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    opacity: 0.9;
+  }
+  
+  .contact__form .send-btn {
+  float: right;
+  background:rgb(255, 0, 212);
+  color: #fff;
+  border:none;
+  width: 120px;
+  height: 40px;
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+  transition-property: background;
+  }
+  
+  @media screen and (max-width: 950px){
+    .seccion__contacto{
+      flex-direction: column;
+    }
+    .contact__info .contact__form{
+      margin: 30px 50px;
+    }
+    .contact__form h2{
+      font-size: 30px;
+      margin-left: 52px;
+      margin-top: 40px;
+    }
+    .contact__form .text-box{
+      width: 100%;
+    }
+    .contact{
+      margin-left: 55px;
+    }
+  }
+
+  /*DISPOSITIVOS MEDIANOS*/
+
+  @media screen and (max-width: 768px){
+    .banner-heroForm {
+      background-image: url(../recursos/bannerseccion.jpg);
+      height: 50vh;
+      background-position-y:-1px ;
+    }
+
+    .formulario-conteiner{
+      background-size: cover;
+    }
+
+    .subtitulo__delFormulario {
+      color: rgb(255, 255, 255);
+      margin: 180px;
+      position: relative;
+      top: -34%;
+      left: -15%;
+      font-size: 20px;
+      
+    }
+    .contact__info{
+      padding-top: 50px;
+    }
+
+    .contact__form{
+      padding-bottom: 50px;
+    }
+  }
+
+  /*DISPOSITIVOS PEQUEÑOS*/
+
+  @media screen and (max-width: 420px){
+    .formulario-conteiner{
+      background-size: cover;
+    }
+
+    .subtitulo__delFormulario {
+      color: rgb(255, 255, 255);
+      margin: 5px;
+      position: relative;
+      top: 5%;
+      left:2%;
+      font-size: 20px;
+    }
+  }

@@ -1,0 +1,23 @@
+.bg-body-tertiary {
+    background-image: linear-gradient(to bottom, #3ef7fd, rgb(211, 201, 254));
+  }
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+@media screen and (max-width:767px) {
+    .ul-bg {
+        background-color: rgb(213, 140, 188);
+    }
+}
+
+@media screen and (max-width:420px) {
+    .ul-bg {
+        background-color: rgb(213, 140, 188);
+    }
+}
+
+nav .nav-item a:hover {
+    color: rgb(184, 78, 160) !important;
+  }

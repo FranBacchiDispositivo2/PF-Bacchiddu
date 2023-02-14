@@ -1,0 +1,333 @@
+.conteiner__mainEstetica {
+    background-color: rgb(213, 140, 188);
+    min-height: calc(280vh - 10vh - 20vh);
+  }
+  
+  .hero__Estetica {
+    background-color: rgb(211, 201, 254);
+    height: 50vh;
+  }
+  
+  .conteiner__esteticaText {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    height: 10vh;
+    width: 100vw; 
+    padding-top: 100px;
+    
+  }
+  
+  .animationText{
+    text-align: center;
+    text-transform:uppercase;
+    font-family: 'roboto' sans-serif;
+    font-size: 50px;
+    letter-spacing: 1px;
+    color: #fff;
+    display: inline-block;
+    animation: fadeIn 1.5s forwards;
+    opacity: 0;
+    transition-timing-function: cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  }
+  
+  .first {
+    display: inline-block;
+    animation: firstspan 1.5s forwards cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    background-color: rgb(213, 140, 188);
+    z-index: 1;
+    position: relative;
+  }
+  
+  .slide{
+    display: inline-flex;
+    overflow: hidden;
+  }
+  
+  .second{
+    font-weight: 100;
+    z-index: -1;
+    display: inline-block;
+    animation: secondspan 1.5s forwards cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: scale(1);
+    }
+    50% {
+      opacity: 1;
+      transform: scale(1.1);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  @keyframes firstspan {
+    0%{
+      transform: translateX(50%);
+    }
+    60%{
+      transform: translateX(50%);
+    }
+    100%{
+      transform: translateX(0%);
+    }
+  }
+  
+  @keyframes secondspan {
+    0%{
+      transform: translateX(-100%);
+    }
+    60%{
+      transform: translateX(-100%);
+    }
+    100%{
+      transform: translateX(0%);
+    }
+  }
+  
+  .subtitulo__estetica h1{
+    position: relative;
+    color: #fff;
+    font-size: 1.2rem;
+    text-align: center;
+    top: 100px
+  }
+
+  .conteiner__deEstatua {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    padding: 20px;
+    margin: 100px auto;
+  }
+  
+  .boxImg {
+  width: 250px;
+  margin: 0 10px;
+  
+  ;
+  }
+  .img__estatua {
+   display: block;
+   width: 120%;
+  }
+  
+  
+  .texto__estatua {
+    font-size: 25px;
+    padding-top: 90px;
+    margin-left: 68px;
+    color: rgb(255, 255, 255);
+    
+  }
+  
+  
+  .seccion__fotosEstetica {
+    margin: 20px;
+    padding: 0;
+    text-align: center;
+  }
+  
+  .seccion__fotosEstetica h1 {
+    color: white;
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+  .container__grilla {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-auto-rows: 100px 300px;
+    grid-gap: 10px;
+    grid-auto-flow: dense;
+  }
+  
+  .gallery-item {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+  
+  .gallery-item .image {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  .gallery-item .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 50%;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+  }
+  .gallery-item:hover .image img {
+    transform: scale(1.5);
+  }
+  
+  .gallery-item .text {
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+    pointer-events: none;
+    z-index: 4;
+    transition: 0.3s ease-in-out;
+    -webkit-backdrop-filter: blur(5px) saturate(1.8);
+    backdrop-filter: blur(5px) saturate(1.8);
+  }
+  
+  .gallery-item:hover .text {
+    opacity: 1;
+    animation: move-down 0.3s linear;
+    padding: 1em;
+    width: 100%;
+  }
+  
+  .w-1 {
+    grid-column: span 1;
+  }
+  .w-2 {
+    grid-column: span 2;
+  }
+  .w-3 {
+    grid-column: span 3;
+  }
+  .w-4 {
+    grid-column: span 4;
+  }
+  .w-5 {
+    grid-column: span 5;
+  }
+  .w-6 {
+    grid-column: span 6;
+  }
+  
+  .h-1 {
+    grid-row: span 1;
+  }
+  .h-2 {
+    grid-row: span 2;
+  }
+  .h-3 {
+    grid-row: span 3;
+  }
+  .h-4 {
+    grid-row: span 4;
+  }
+  .h-5 {
+    grid-row: span 5;
+  }
+  .h-6 {
+    grid-row: span 6;
+  }
+  
+  /* DISPOSITIVOS MEDIANOS*/
+  
+  @media (max-width: 768px) {
+    .container__grilla {
+      grid-template-columns: repeat(1, 1fr);
+    }
+    .w-1,
+    .w-2,
+    .w-3,
+    .w-4,
+    .w-5,
+    .w-6 {
+      grid-column: span 1;
+    }
+  }
+  
+  /* DISPOSITIVOS CHICOS*/
+  
+  @media (max-width: 420px) {
+    .container__grilla {
+      grid-template-columns: repeat(1, 1fr);
+    }
+    .w-1,
+    .w-2,
+    .w-3,
+    .w-4,
+    .w-5,
+    .w-6 {
+      grid-column: span 1;
+    }
+  }
+  
+  @keyframes move-down {
+    0% {
+      top: 10%;
+    }
+    50% {
+      top: 35%;
+    }
+    100% {
+      top: 50%;
+    }
+  }
+
+
+
+  /* DISPOSITIVOS MEDIANOS SECCIÓN ESTÉTICA*/
+
+@media screen and (max-width: 768px){
+  .conteiner__mainEstetica {
+    height: 540vh;
+  }
+  .animationText{
+    font-size: 30px;
+  }
+  .subtitulo__estetica{
+    position: relative;
+    top: -21%;
+
+  }
+  .subtitulo__estetica h1 {
+    font-size: 1.1rem;
+    margin: 30px;  
+  }
+  .texto__estatua{
+    font-size: 15px;
+  }
+}
+
+
+/* DISPOSITIVOS CHICOS "SECCIÓN ESTÉTICA"*/
+
+@media screen and (max-width: 420px){
+  .conteiner__mainEstetica {
+    height: 540vh;
+  }
+  .animationText{
+    position: relative;
+    top: -10%;
+    font-size: 16px;
+  }
+  .subtitulo__estetica{
+    position: relative;
+    top: -21%;
+
+  }
+  .subtitulo__estetica h1 {
+    font-size: 0.8rem;
+    margin: 30px;  
+  }
+  
+  .img__estatua {
+    position: relative;
+    top: 35%;
+    width: 190%;
+   }
+  .texto__estatua{
+    font-size: 15px;
+  }
+}
