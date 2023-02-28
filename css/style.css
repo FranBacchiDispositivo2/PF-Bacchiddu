@@ -273,6 +273,18 @@ footer {
     height: 50vh;
     background-size: cover;
     background-position-y: -50vh; }
+  .texto__subtituloOrigen {
+    color: white;
+    text-align: center;
+    margin-top: 100px;
+    margin-left: 20px;
+    font-size: 17px; }
+  .conteiner__mainOrigen {
+    height: 180vh; }
+  .container__cardsOrigen {
+    display: block;
+    width: 179%;
+    margin-top: 200px; }
   .container__cardsOrigen .content_Card {
     position: absolute;
     right: 0;
@@ -283,55 +295,45 @@ footer {
     align-items: center; }
   .container__cardsOrigen .cardOrigen .content_Card h3 {
     margin-bottom: 3px;
-    font-size: 12px; }
+    font-size: 0.6em; }
   .container__cardsOrigen .cardOrigen .content_Card p {
     display: inline-block;
-    font-size: 9.5px; } }
+    font-size: 0.7em; } }
 
 /*DISPOSITIVOS CHICOS*/
 @media screen and (max-width: 420px) {
   .hero__origen {
     background-image: url(../recursos/bannerseccion.jpg);
-    height: 49vh;
+    height: 50vh;
     background-size: cover;
-    background-position-y: -49vh; }
-  .conteiner__mainOrigen {
-    background-color: #d58cbc;
-    height: 143vh; }
-  .texto__tituloOrigen {
-    color: white;
-    text-align: center;
-    margin-left: 55px;
-    padding-top: 24px;
-    font-size: 30px;
-    width: 70%; }
+    background-position-y: -50vh; }
   .texto__subtituloOrigen {
     color: white;
     text-align: center;
-    margin-top: 10px;
-    margin-left: 37px;
-    width: 80%;
-    font-size: 15px; }
-  .container__cardsOrigen {
-    position: relative;
     margin-top: 50px;
-    right: -12.5%;
-    width: 160%;
-    display: block; }
+    margin-left: 20px;
+    font-size: 15px; }
+  .conteiner__mainOrigen {
+    height: 180vh; }
+  .container__cardsOrigen {
+    display: block;
+    width: 179%;
+    margin-top: 200px;
+    margin-left: 2px; }
   .container__cardsOrigen .content_Card {
     position: absolute;
     right: 0;
     width: calc(100% - 75px);
     height: 100%;
-    padding: 3px;
+    padding: 2px;
     justify-content: center;
     align-items: center; }
   .container__cardsOrigen .cardOrigen .content_Card h3 {
     margin-bottom: 3px;
-    font-size: 11px; }
+    font-size: 0.4em; }
   .container__cardsOrigen .cardOrigen .content_Card p {
     display: inline-block;
-    font-size: 10px; } }
+    font-size: 0.5em; } }
 
 .conteiner__mainMusica {
   background-color: #d58cbc;
@@ -671,12 +673,15 @@ footer {
   100% {
     transform: translateX(0%); } }
 
-.subtitulo__estetica h1 {
+.subtitulo__estetica {
   position: relative;
+  top: 30%; }
+
+.subtitulo__estetica h1 {
   color: #fff;
-  font-size: 1.2rem;
+  font-size: 1rem;
   text-align: center;
-  top: 100px; }
+  margin-top: 30px; }
 
 .conteiner__deEstatua {
   display: flex;
@@ -830,13 +835,17 @@ footer {
   .conteiner__mainEstetica {
     height: 540vh; }
   .animationText {
-    font-size: 30px; }
+    font-size: 15px; }
   .subtitulo__estetica {
     position: relative;
-    top: -21%; }
+    top: 0%; }
   .subtitulo__estetica h1 {
-    font-size: 1.1rem;
-    margin: 30px; }
+    font-size: 0.8rem;
+    margin: 55px; }
+  .img__estatua {
+    width: 120%;
+    position: relative;
+    top: 18%; }
   .texto__estatua {
     font-size: 15px; } }
 
@@ -847,17 +856,17 @@ footer {
   .animationText {
     position: relative;
     top: -10%;
-    font-size: 16px; }
+    font-size: 12px; }
   .subtitulo__estetica {
     position: relative;
-    top: -21%; }
+    top: 0%; }
   .subtitulo__estetica h1 {
     font-size: 0.8rem;
-    margin: 30px; }
+    margin: 55px; }
   .img__estatua {
+    width: 200%;
     position: relative;
-    top: 35%;
-    width: 190%; }
+    top: 40%; }
   .texto__estatua {
     font-size: 15px; } }
 
