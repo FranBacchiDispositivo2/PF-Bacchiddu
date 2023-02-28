@@ -258,13 +258,11 @@ footer {
 
 .container__cardsOrigen .cardOrigen .content_Card h3 {
   margin-bottom: 5px;
-  font-size: 18px; }
+  font-size: 0.5rem; }
 
 .container__cardsOrigen .cardOrigen .content_Card p {
   display: inline-block;
-  font-size: 15px;
-  margin-left: 23px;
-  padding: 1px 10px; }
+  font-size: 0.6rem; }
 
 /*DISPOSITIVOS MEDIANOS*/
 @media screen and (max-width: 768px) {
@@ -276,7 +274,7 @@ footer {
   .texto__subtituloOrigen {
     color: white;
     text-align: center;
-    margin-top: 100px;
+    margin-top: 40px;
     margin-left: 20px;
     font-size: 17px; }
   .conteiner__mainOrigen {
@@ -310,9 +308,9 @@ footer {
   .texto__subtituloOrigen {
     color: white;
     text-align: center;
-    margin-top: 50px;
+    margin-top: 20px;
     margin-left: 20px;
-    font-size: 15px; }
+    font-size: 17px; }
   .conteiner__mainOrigen {
     height: 180vh; }
   .container__cardsOrigen {
